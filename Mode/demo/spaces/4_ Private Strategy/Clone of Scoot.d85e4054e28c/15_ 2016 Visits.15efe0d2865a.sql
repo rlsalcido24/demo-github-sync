@@ -2,6 +2,6 @@
     TO_CHAR(occurred_at,'MM')as month,
     COUNT(*)
       FROM demo.web_events_full 
-      where occurred_at <= '2017-01-01'
+      where occurred_at <= '2017-02-01'
       group by 1,2
       order by 1,2
